@@ -1,0 +1,1 @@
+VS Code's standard Monokai theme with a few legibility improvements.
