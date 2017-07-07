@@ -166,25 +166,8 @@
     },
     {
       "name": "Class name",
-      "scope": "entity.name.type, entity.name.class",
+      "scope": "entity.name.type, entity.name.class, entity.other.inherited-class",
       "settings": {
-        "fontStyle": "underline",
-        "foreground": "#A6E22E"
-      }
-    },
-    {
-      "name": "Inherited class",
-      "scope": "entity.other.inherited-class",
-      "settings": {
-        "fontStyle": "italic underline",
-        "foreground": "#A6E22E"
-      }
-    },
-    {
-      "name": "Function name",
-      "scope": "entity.name.function",
-      "settings": {
-        "fontStyle": "",
         "foreground": "#A6E22E"
       }
     },
@@ -213,11 +196,18 @@
       }
     },
     {
-      "name": "Library function",
-      "scope": "support.function",
+      "name": "Function Name",
+      "scope": "support.function, entity.name.function, variable.language.super",
       "settings": {
         "fontStyle": "",
         "foreground": "#66D9EF"
+      }
+    },
+    {
+      "scope": "meta.definition entity.name.function",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#a6e22e"
       }
     },
     {
@@ -232,7 +222,6 @@
       "name": "Library class\/type",
       "scope": "support.type, support.class",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "#66D9EF"
       }
     },
@@ -379,6 +368,55 @@
       "scope": "meta.object-literal.key, variable.object.property",
       "settings": {
         "foreground": "#E6DB74"
+      }
+    },
+    {
+      "scope": "variable.language.this",
+      "settings": {
+        "foreground": "#FD971F"
+      }
+    },
+    {
+      "scope": "variable.other.readwrite",
+      "settings": {
+        "foreground": "#f8f8f2ff"
+      }
+    },
+    {
+      "scope": "meta.definition.method entity.name.function",
+      "settings": {
+        "foreground": "#a6e22e"
+      }
+    },
+    {
+      "scope": "meta.method.declaration storage.type",
+      "settings": {
+        "foreground": "#A6E22E",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": "meta.method.declaration meta.var.expr storage.type",
+      "settings": {
+        "foreground": "#66D9EF"
+      }
+    },
+    {
+      "scope": "storage.type.function.arrow",
+      "settings": {
+        "foreground": "#f92672"
+      }
+    },
+    {
+      "scope": "entity.name.tag support.class.component",
+      "settings": {
+        "foreground": "#f92672"
+      }
+    },
+    {
+      "scope": "punctuation.separator.key-value",
+      "settings":{
+        "foreground": "#f8f8f2"
       }
     }
   ]
